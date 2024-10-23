@@ -4,44 +4,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/app.css">
+    <title>B4-You | Portfolio</title>
 </head>
 
 <body>
     <header>
-        <!-- Logo -->
-        <div></div>
+        <nav>
+            <div class="brand">
+                <img src="https://picsum.photos/100">
+            </div>
 
-        <!-- Navbar -->
-        <nav></nav>
+            <ul>
+                <li><a href="#home" class="text-sm">Home</a></li>
+                <li><a href="#my-profile" class="text-sm">My Profile</a></li>
+                <li><a href="#my-skill" class="text-sm">My Skill</a></li>
+                <li><a href="#portfolio" class="text-sm">Portfolio</a></li>
+                <li><a href="#contact" class="text-sm">Contact Me</a></li>
+            </ul>
+
+            <div class="mobile-menu-button">
+                <i class="fa-solid fa-chevron-left text-lg"></i>
+            </div>
+        </nav>
+
+        <div class="jumbotron" id="home">
+            <div class="overlay"></div>
+            <div class="welcome-text">
+                <p>Hello!</p>
+                <h1 class="text-xxl fw-bold">
+                    <span class="running-text" style="color: var(--secondary);"></span>
+                </h1>
+                <p>Welcome to My Website.</p>
+                <a href="#contact" class="text-sm">Contact Me</a>
+            </div>
+            <div class="slider-button left" onclick="slideImage(-1)">
+                <i class="fa-solid fa-chevron-left text-xl"></i>
+            </div>
+            <div class="slider-button right" onclick="slideImage(1)">
+                <i class="fa-solid fa-chevron-right text-xl"></i>
+            </div>
+            <div class="slider-image">
+                <img src="https://picsum.photos/1920/1080?random=1">
+                <img src="https://picsum.photos/1920/1080?random=2">
+                <img src="https://picsum.photos/1920/1080?random=3">
+                <img src="https://picsum.photos/1920/1080?random=4">
+                <img src="https://picsum.photos/1920/1080?random=5">
+            </div>
+            <div class="slider-indicator"></div>
+        </div>
     </header>
 
     <main>
-        <!-- Section Home -->
-        <section>
-            <header></header>
+        <article class="card-outside shadow" id="my-skill">
+            <div class="card-inside">
+                <h2 class="text-xl text-center fw-bold">My Skill</h2>
+                <p class="text-center">These are the technologies used in most of the projects.</p>
+                <div class="card-body">
+                    <div class="inactive">
+                        <img src="image/html.png" alt="HTML Logo">
+                        <span class="text-center" style="color: #e44d26;">HTML 5</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/css.png" alt="CSS Logo">
+                        <span class="text-center" style="color: #0071bc;">CSS 3</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/sass.png" alt="Sass Logo">
+                        <span class="text-center" style="color: #cf649a;">Sass</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/js.png" alt="JavaScript Logo">
+                        <span class="text-center" style="color: #f7df1e;">JavaScript</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/bootstrap.png" alt="Bootstrap Logo">
+                        <span class="text-center" style="color: #7e13f8;">Bootstrap</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/tailwind.png" alt="Tailwind Logo">
+                        <span class="text-center" style="color: #1badba;">TailwindCSS</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/php.png" alt="PHP Logo">
+                        <span class="text-center" style="color: #6181b6;">PHP</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/laravel.png" alt="Laravel Logo">
+                        <span class="text-center" style="color: #ff2d20;">Laravel</span>
+                    </div>
+                    <div class="inactive">
+                        <img src="image/mysql.png" alt="MySQL Logo">
+                        <span class="text-center" style="color: #00546b;">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-            <article>
-                <p></p>
+        <article class="card-outside shadow" id="portfolio">
+            <div class="card-inside">
+                <h2 class="text-xl text-center fw-bold">Portfolio</h2>
+                <p class="text-center">These are several developed projects.</p>
 
-                <!-- Photo Banner -->
-                <div></div>
-            </article>
-        </section>
+                <section class="portfolio-card">
+                    <div class="portfolio-thumbnail">
+                        <img src="image/sharestock.jpeg" alt="Share Stock">
+                    </div>
+                    <div class="portfolio-body">
+                        <h3 class="text-lg text-center fw-semibold">Share Stock</h3>
+                        <p class="text-sm">Share Stock is a simple web application used for stock management in a warehouse. The technologies used in this project are:</p>
+                        <ul class="text-sm">
+                            <li>Front-End : <span class="fw-semibold">HTML, CSS, JS, Bootstrap</span></li>
+                            <li>Back-End : <span class="fw-semibold">PHP, Laravel</span></li>
+                            <li>Database : <span class="fw-semibold">MySQL</span></li>
+                        </ul>
+                        <a href="https://www.sharestock.co.id" target="_blank">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
 
-        <!-- Section Profile -->
-        <section></section>
+                <section class="portfolio-card">
+                    <div class="portfolio-thumbnail">
+                        <img src="image/simoka.jpeg" alt="simoka">
+                    </div>
+                    <div class="portfolio-body">
+                        <h3 class="text-lg text-center fw-semibold">SIMOKA</h3>
+                        <p class="text-sm">SIMOKA is a short term for “Sistem Monitoring Ketinggian Air” is a dashboard for monitoring and controlling IoT devices which used as Early Warning Flood System. The technologies used in this project are:</p>
+                        <ul class="text-sm">
+                            <li>Front-End : <span class="fw-semibold">HTML, CSS, JS, TailwindCSS</span></li>
+                            <li>Back-End : <span class="fw-semibold">PHP, Laravel</span></li>
+                            <li>Database : <span class="fw-semibold">MySQL</span></li>
+                        </ul>
+                        <a href="https://www.simoka.web.id" target="_blank">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
+            </div>
+        </article>
 
-        <!-- Section Portfolio -->
-        <section>
-            <header></header>
-        </section>
+        <article class="card-outside shadow" id="contact">
+            <div class="card-inside">
+                <h2 class="text-xl text-center fw-bold">Contact Me</h2>
+                <div class="form-container">
+                    <form id="contact-me" class="text-center" action="#contact" method="post">
+                        <div class="input-group">
+                            <label for="name" class="text-sm text-left fw-light">Your Name</label>
+                            <div>
+                                <input type="text" id="name" name="name" placeholder="Please tell me your name." autocomplete="off">
+                                <p class="invalid text-left text-xs" id="invalid-name"></p>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="birth-date" class="text-sm text-left fw-light">Your Birthdate</label>
+                            <div>
+                                <input type="date" id="birth-date" name="birth-date">
+                                <p class="invalid text-left text-xs" id="invalid-birthdate"></p>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="text-sm text-left fw-light">Gender</label>
+                            <div>
+                                <select id="gender" name="gender">
+                                    <option value="" selected hidden>-- Choose Gender --</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Male">Female</option>
+                                </select>
+                                <p class="invalid text-left text-xs" id="invalid-gender"></p>
+                            </div>
+                        </div>
+                        <div class="input-group" style="align-items: start;">
+                            <label for="message" class="text-sm text-left fw-light">Message</label>
+                            <div>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                                <p class="invalid text-left text-xs" id="invalid-message"></p>
+                            </div>
+                        </div>
+                        <button type="submit" class="text-sm">Send Message</button>
+                    </form>
+                    <div class="message">
+                        <p class="text-center">Your Message</p>
+                        <table style="display: none;">
+                            <tr>
+                                <td>Name</td>
+                                <td>:</td>
+                                <td id="display-name"></td>
+                            </tr>
+                            <tr>
+                                <td>Birthdate</td>
+                                <td>:</td>
+                                <td id="display-birthdate"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>:</td>
+                                <td id="display-gender"></td>
+                            </tr>
+                            <tr>
+                                <td>Message</td>
+                                <td>:</td>
+                                <td id="display-message"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-        <!-- Section Message Us -->
-        <section></section>
+        <aside class="card-outside shadow">
+            <div class="card-inside">
+                <section id="my-profile">
+                    <h2 class="text-xl text-center fw-bold">About Me</h2>
+                    <div class="profile-outside">
+                        <div class="profile-inside">
+                            <img src="image/profile.jpg" alt="Profile Picture">
+                        </div>
+                    </div>
+                    <p class="text-md text-center fw-semibold">Bayu Kurnia Dwi Putra</p>
+                    <p class="description">I’m 29 years old that currently live in Center Borneo as a Logistic Staff in an electricity company. Having interest in electronics, programming, and developing IoT device and Web App.</p>
+                </section>
+            </div>
+        </aside>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="wave-wrapper">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer-content">
+            <div>
+                <span class="fw-semibold">GET CONNECTED</span>
+                <ul class="text-sm fw-light">
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/bayu.kdp" target="_blank">@bayu.kdp</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://www.github.com/bkurnia13" target="_blank">bkurnia13</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="fw-semibold">OFFICE</span>
+                <ul class="text-sm fw-light">
+                    <li>Barabai</li>
+                    <li>Hulu Sungai Tengah</li>
+                    <li>Kalimantan Selatan</li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="fw-semibold">MORE INFO</span>
+                <ul class="text-sm fw-light">
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/628115511224" target="_blank">+62811-5511-224</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>bayu.kdp@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="fw-semibold">QUICK LINKS</span>
+                <ul class="text-sm fw-light">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrapper text-center">
+            <span class="text-xs">Copyright &copy; 2024 | Bayu KDP | All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script/app.js"></script>
 </body>
 
 </html>
