@@ -13,7 +13,9 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
+        <!-- Navbar -->
         <nav>
             <div class="brand">
                 <img src="https://picsum.photos/100">
@@ -27,13 +29,17 @@
                 <li><a href="#contact" class="text-sm">Contact Me</a></li>
             </ul>
 
+            <!-- Mobile Menu Button -->
             <div class="mobile-menu-button">
                 <i class="fa-solid fa-chevron-left text-lg"></i>
             </div>
         </nav>
 
+        <!-- Jumbotron -->
         <div class="jumbotron" id="home">
             <div class="overlay"></div>
+
+            <!-- Welcome Text -->
             <div class="welcome-text">
                 <p>Hello!</p>
                 <h1 class="text-xxl fw-bold">
@@ -42,12 +48,16 @@
                 <p>Welcome to My Website.</p>
                 <a href="#contact" class="text-sm">Contact Me</a>
             </div>
+
+            <!-- Slider Button -->
             <div class="slider-button left" onclick="slideImage(-1)">
                 <i class="fa-solid fa-chevron-left text-xl"></i>
             </div>
             <div class="slider-button right" onclick="slideImage(1)">
                 <i class="fa-solid fa-chevron-right text-xl"></i>
             </div>
+
+            <!-- Slider Image -->
             <div class="slider-image">
                 <img src="https://picsum.photos/1920/1080?random=1">
                 <img src="https://picsum.photos/1920/1080?random=2">
@@ -55,11 +65,15 @@
                 <img src="https://picsum.photos/1920/1080?random=4">
                 <img src="https://picsum.photos/1920/1080?random=5">
             </div>
+
+            <!-- Slider Indicator -->
             <div class="slider-indicator"></div>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- My Skill Section -->
         <article class="card-outside shadow" id="my-skill">
             <div class="card-inside">
                 <h2 class="text-xl text-center fw-bold">My Skill</h2>
@@ -105,6 +119,7 @@
             </div>
         </article>
 
+        <!-- Portfolio Section -->
         <article class="card-outside shadow" id="portfolio">
             <div class="card-inside">
                 <h2 class="text-xl text-center fw-bold">Portfolio</h2>
@@ -144,6 +159,7 @@
             </div>
         </article>
 
+        <!-- Contact Section -->
         <article class="card-outside shadow" id="contact">
             <div class="card-inside">
                 <h2 class="text-xl text-center fw-bold">Contact Me</h2>
@@ -212,6 +228,7 @@
             </div>
         </article>
 
+        <!-- About Section -->
         <aside class="card-outside shadow">
             <div class="card-inside">
                 <section id="my-profile">
@@ -228,6 +245,7 @@
         </aside>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="wave-wrapper">
             <div class="wave" id="wave1"></div>
