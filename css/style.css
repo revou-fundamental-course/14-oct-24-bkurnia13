@@ -214,7 +214,7 @@ nav ul li a:hover::before {
   width: 30px;
   height: 75px;
   color: gray;
-  background-color: rgba(11, 72, 107, 0.5);
+  background-color: rgba(11, 72, 107, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
